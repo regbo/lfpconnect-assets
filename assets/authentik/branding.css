@@ -64,6 +64,15 @@ ak-flow-executor::part(branding) {
   background-color: #fff9f5 !important;
 }
 
+/* Authentik pins the nested locale picker to theme="light". Style its
+   exported host part directly so the icon cannot retain that theme's ink. */
+ak-flow-executor::part(locale-select),
+ak-flow-executor::part(locale-select-label),
+ak-flow-executor::part(locale-select-select) {
+  color: #0b1426 !important;
+  --ak-c-flow-executor__locale-select--Color: #0b1426 !important;
+}
+
 ak-library-impl::part(card) {
   background-color: var(--pf-c-card--BackgroundColor) !important;
   color: var(--pf-global--Color--100) !important;
@@ -188,6 +197,14 @@ textarea:focus {
   ak-flow-executor::part(branding) {
     background-color: #46536b !important;
     color: #fff9f5 !important;
+  }
+
+  ak-flow-executor::part(locale-select),
+  ak-flow-executor::part(locale-select-label),
+  ak-flow-executor::part(locale-select-select) {
+    color: #fff9f5 !important;
+    fill: #fff9f5 !important;
+    --ak-c-flow-executor__locale-select--Color: #fff9f5 !important;
   }
 
   .pf-c-form__label,
