@@ -80,6 +80,11 @@ ak-library-impl::part(card) {
 
 ak-library-impl::part(card-title) {
   color: var(--pf-global--Color--100) !important;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 /* Remove the upstream product attribution from every flow layout. */
@@ -152,6 +157,37 @@ textarea:focus {
   ak-flow-executor::part(main) {
     margin: 1rem;
     box-shadow: 0 1rem 3rem rgb(11 20 38 / 12%) !important;
+  }
+}
+
+/* Give real product names enough room on phones. Authentik's 6.5rem minimum
+   otherwise packs three cards into a 390px viewport and lets labels escape. */
+@media (max-width: 35rem) {
+  ak-library-impl {
+    --app-card-min-width: 8.75rem !important;
+    --app-group-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  ak-library-impl::part(app-group) {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+  }
+
+  ak-library-impl::part(card-wrapper),
+  ak-library-impl::part(card),
+  ak-library-impl::part(card-title) {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  ak-library-impl::part(card-title) {
+    padding-inline: 0.35rem !important;
+    font-size: clamp(0.875rem, 4vw, 1rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 }
 
