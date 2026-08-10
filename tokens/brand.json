@@ -1,0 +1,10 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "color": {
+    "coral": { "$type": "color", "$value": "#FF6F61" },
+    "coralHover": { "$type": "color", "$value": "#E85C50" },
+    "ink": { "$type": "color", "$value": "#0B1426" },
+    "warmWhite": { "$type": "color", "$value": "#FFF9F5" },
+    "softCoral": { "$type": "color", "$value": "#FFF0EC" }
+  }
+}

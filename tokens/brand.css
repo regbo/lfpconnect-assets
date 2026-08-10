@@ -1,0 +1,18 @@
+:root {
+  --lfp-coral: #ff6f61;
+  --lfp-coral-hover: #e85c50;
+  --lfp-ink: #0b1426;
+  --lfp-warm-white: #fff9f5;
+  --lfp-soft-coral: #fff0ec;
+  --lfp-logo-clear-space: 0.5em;
+}
+
+[data-theme="dark"] {
+  --lfp-surface: var(--lfp-ink);
+  --lfp-on-surface: var(--lfp-warm-white);
+}
+
+[data-theme="light"] {
+  --lfp-surface: var(--lfp-warm-white);
+  --lfp-on-surface: var(--lfp-ink);
+}
