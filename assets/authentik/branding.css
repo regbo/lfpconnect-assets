@@ -110,6 +110,12 @@ a {
     --pf-c-page--BackgroundColor: #344057 !important;
     --pf-c-card--BackgroundColor: #46536b !important;
     --pf-c-form-control--Color: #fff9f5 !important;
+    --pf-global--primary-color--100: #ff6f61 !important;
+    --pf-global--primary-color--200: #e85c50 !important;
+    --pf-v6-global--primary-color--100: #ff6f61 !important;
+    --pf-v6-global--primary-color--200: #e85c50 !important;
+    --pf-c-button--m-primary--BackgroundColor: #ff6f61 !important;
+    --pf-v6-c-button--m-primary--BackgroundColor: #ff6f61 !important;
   }
 
   html,
