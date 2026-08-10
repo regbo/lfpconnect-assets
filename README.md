@@ -6,6 +6,7 @@ A deliberately simple identity for [lfpconnect.io](https://lfpconnect.io): a sty
 
 - Primary transparent wordmark: `assets/svg/lfp-connect.svg`
 - Reversed transparent wordmark: `assets/svg/lfp-connect-reversed.svg`
+- Theme-aware transparent wordmark: `assets/svg/lfp-connect-auto.svg`
 - Light presentation tile: `assets/svg/lfp-light.svg`
 - Dark presentation tile: `assets/svg/lfp-dark.svg`
 - Compact transparent monogram: `assets/svg/lfp-coral.svg`
