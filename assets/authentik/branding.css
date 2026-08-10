@@ -1,5 +1,6 @@
 /* LFP Connect Authentik theme. Source of truth: regbo/lfpconnect-assets. */
-:root {
+:root,
+[data-theme="dark"] {
   color-scheme: light;
   --ak-accent: #ff6f61;
   --ak-c-login__main--BackgroundColor: #fff9f5;
@@ -8,16 +9,25 @@
   --ak-c-flow-executor__locale-select--Color: #0b1426;
   --pf-t--global--color--brand--default: #ff6f61;
   --pf-t--global--color--brand--hover: #e85c50;
-  --pf-global--primary-color--100: #ff6f61;
-  --pf-global--primary-color--200: #e85c50;
-  --pf-v6-global--primary-color--100: #ff6f61;
-  --pf-v6-global--primary-color--200: #e85c50;
-  --pf-global--BackgroundColor--100: #fff9f5;
-  --pf-global--BackgroundColor--200: #fff0ec;
-  --pf-global--Color--100: #0b1426;
-  --pf-global--Color--200: #344057;
-  --pf-c-page--BackgroundColor: #fff0ec;
-  --pf-c-card--BackgroundColor: #fff9f5;
+  --pf-global--primary-color--100: #ff6f61 !important;
+  --pf-global--primary-color--200: #e85c50 !important;
+  --pf-v6-global--primary-color--100: #ff6f61 !important;
+  --pf-v6-global--primary-color--200: #e85c50 !important;
+  --pf-global--BackgroundColor--100: #fff9f5 !important;
+  --pf-global--BackgroundColor--200: #fff0ec !important;
+  --pf-global--BackgroundColor--dark-100: #fff9f5 !important;
+  --pf-global--BackgroundColor--dark-200: #fff0ec !important;
+  --pf-global--Color--100: #0b1426 !important;
+  --pf-global--Color--200: #344057 !important;
+  --pf-global--Color--dark-100: #0b1426 !important;
+  --pf-global--Color--dark-200: #344057 !important;
+  --pf-global--Color--light-100: #0b1426 !important;
+  --pf-global--Color--light-200: #344057 !important;
+  --pf-c-page--BackgroundColor: #fff0ec !important;
+  --pf-c-card--BackgroundColor: #fff9f5 !important;
+  --pf-c-form-control--Color: #0b1426 !important;
+  --pf-c-button--m-primary--BackgroundColor: #ff6f61 !important;
+  --pf-v6-c-button--m-primary--BackgroundColor: #ff6f61 !important;
 }
 
 html,
@@ -88,58 +98,5 @@ a {
   ak-flow-executor::part(main) {
     margin: 1rem;
     box-shadow: 0 1rem 3rem rgb(11 20 38 / 12%) !important;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root,
-  [data-theme="dark"] {
-    color-scheme: dark;
-    --ak-c-login__main--BackgroundColor: #46536b !important;
-    --ak-c-login__main--Color: #fff9f5 !important;
-    --ak-c-login--BackgroundColorOverlay: #344057 !important;
-    --ak-c-flow-executor__locale-select--Color: #fff9f5 !important;
-    --pf-global--BackgroundColor--100: #46536b !important;
-    --pf-global--BackgroundColor--200: #344057 !important;
-    --pf-global--BackgroundColor--dark-100: #344057 !important;
-    --pf-global--BackgroundColor--dark-200: #46536b !important;
-    --pf-global--Color--100: #fff9f5 !important;
-    --pf-global--Color--200: #f7dcd6 !important;
-    --pf-global--Color--dark-100: #fff9f5 !important;
-    --pf-global--Color--dark-200: #f7dcd6 !important;
-    --pf-c-page--BackgroundColor: #344057 !important;
-    --pf-c-card--BackgroundColor: #46536b !important;
-    --pf-c-form-control--Color: #fff9f5 !important;
-    --pf-global--primary-color--100: #ff6f61 !important;
-    --pf-global--primary-color--200: #e85c50 !important;
-    --pf-v6-global--primary-color--100: #ff6f61 !important;
-    --pf-v6-global--primary-color--200: #e85c50 !important;
-    --pf-c-button--m-primary--BackgroundColor: #ff6f61 !important;
-    --pf-v6-c-button--m-primary--BackgroundColor: #ff6f61 !important;
-  }
-
-  html,
-  body,
-  .pf-c-login,
-  .pf-c-background-image,
-  ak-flow-executor {
-    background-color: #344057 !important;
-    color: #fff9f5 !important;
-  }
-
-  ak-flow-executor::part(main),
-  ak-flow-executor::part(branding) {
-    background-color: #46536b !important;
-    color: #fff9f5 !important;
-  }
-
-  ak-library-impl::part(card) {
-    background-color: #46536b !important;
-    border-color: #6c7890 !important;
-  }
-
-  ak-library-impl::part(card-title),
-  ak-library-impl::part(search-input) {
-    color: #fff9f5 !important;
   }
 }
