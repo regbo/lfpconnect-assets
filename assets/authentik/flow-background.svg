@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">LFP Connect soft coral background</title>
   <desc id="desc">A flat soft coral background for authentication flows.</desc>
-  <rect width="1600" height="900" fill="#FFF0EC"/>
+  <style>
+    .canvas { fill: #FFF0EC; }
+    @media (prefers-color-scheme: dark) { .canvas { fill: #344057; } }
+  </style>
+  <rect class="canvas" width="1600" height="900"/>
 </svg>

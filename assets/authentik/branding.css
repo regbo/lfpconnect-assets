@@ -134,3 +134,83 @@ textarea {
     box-shadow: 0 1rem 3rem rgb(11 20 38 / 12%) !important;
   }
 }
+
+/* Follow the operating-system theme while retaining LFP contrast and colors. */
+@media (prefers-color-scheme: dark) {
+  :root,
+  [data-theme="dark"] {
+    color-scheme: dark;
+    --ak-c-login__main--BackgroundColor: #46536b !important;
+    --ak-c-login__main--Color: #fff9f5 !important;
+    --ak-c-login--BackgroundColorOverlay: #344057 !important;
+    --ak-c-flow-executor__locale-select--Color: #fff9f5 !important;
+    --pf-global--BackgroundColor--100: #46536b !important;
+    --pf-global--BackgroundColor--200: #344057 !important;
+    --pf-global--BackgroundColor--dark-100: #344057 !important;
+    --pf-global--BackgroundColor--dark-200: #46536b !important;
+    --pf-global--Color--100: #fff9f5 !important;
+    --pf-global--Color--200: #f7dcd6 !important;
+    --pf-global--Color--dark-100: #fff9f5 !important;
+    --pf-global--Color--dark-200: #f7dcd6 !important;
+    --pf-global--Color--light-100: #fff9f5 !important;
+    --pf-global--Color--light-200: #f7dcd6 !important;
+    --pf-global--link--Color: #ffb0a8 !important;
+    --pf-global--link--Color--hover: #ffd0ca !important;
+    --pf-c-page--BackgroundColor: #344057 !important;
+    --pf-c-card--BackgroundColor: #46536b !important;
+    --pf-c-form-control--Color: #fff9f5 !important;
+    --pf-c-form__label--Color: #fff9f5 !important;
+    --pf-c-page__title--Color: #fff9f5 !important;
+    --pf-c-title--Color: #fff9f5 !important;
+  }
+
+  html,
+  body,
+  .pf-c-login,
+  .pf-c-background-image,
+  ak-flow-executor {
+    background-color: #344057 !important;
+    color: #fff9f5 !important;
+  }
+
+  ak-flow-executor::part(main),
+  ak-flow-executor::part(branding) {
+    background-color: #46536b !important;
+    color: #fff9f5 !important;
+  }
+
+  .pf-c-form__label,
+  .pf-c-form__label-text,
+  .pf-c-title,
+  .pf-c-page__title,
+  .pf-c-login__main-body,
+  label,
+  .source-button,
+  .source-button i,
+  [part~="source-icon"] {
+    color: #fff9f5 !important;
+  }
+
+  .pf-c-form-control,
+  input,
+  select,
+  textarea {
+    color: #fff9f5 !important;
+    border-bottom-color: #ff6f61 !important;
+  }
+
+  a {
+    color: #ffb0a8 !important;
+  }
+
+  ak-library-impl::part(card) {
+    background-color: #46536b !important;
+    border-color: #6c7890 !important;
+    color: #fff9f5 !important;
+  }
+
+  ak-library-impl::part(card-title),
+  ak-library-impl::part(search-input) {
+    color: #fff9f5 !important;
+  }
+}
