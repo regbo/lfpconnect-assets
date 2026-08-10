@@ -1,0 +1,80 @@
+/* LFP Connect Authentik theme. Source of truth: regbo/lfpconnect-assets. */
+:root,
+[data-theme="dark"] {
+  color-scheme: light;
+  --ak-accent: #ff6f61;
+  --ak-c-login__main--BackgroundColor: #fff9f5;
+  --ak-c-login__main--Color: #0b1426;
+  --ak-c-login--BackgroundColorOverlay: #fff0ec;
+  --ak-c-flow-executor__locale-select--Color: #0b1426;
+  --pf-t--global--color--brand--default: #ff6f61;
+  --pf-t--global--color--brand--hover: #e85c50;
+  --pf-global--primary-color--100: #ff6f61;
+  --pf-global--primary-color--200: #e85c50;
+  --pf-v6-global--primary-color--100: #ff6f61;
+  --pf-v6-global--primary-color--200: #e85c50;
+  --pf-global--BackgroundColor--100: #fff9f5;
+  --pf-global--Color--100: #0b1426;
+}
+
+html,
+body,
+.pf-c-login,
+.pf-c-background-image,
+ak-flow-executor {
+  background-color: #fff0ec !important;
+}
+
+/* The flow background is intentionally flat; never show authentik wallpapers. */
+.pf-c-background-image::before,
+.pf-c-background-image::after {
+  background-image: none !important;
+}
+
+ak-flow-executor::part(main) {
+  background-color: #fff9f5 !important;
+  color: #0b1426 !important;
+  border-radius: 1rem;
+}
+
+ak-flow-executor::part(branding) {
+  background-color: #fff9f5 !important;
+}
+
+/* Remove the upstream product attribution from every flow layout. */
+ak-flow-executor::part(footer),
+ak-brand-links,
+.pf-c-login__footer {
+  display: none !important;
+}
+
+.pf-c-button.pf-m-primary,
+.pf-v6-c-button.pf-m-primary {
+  background-color: #ff6f61 !important;
+  --pf-c-button--m-primary--BackgroundColor: #ff6f61;
+  --pf-v6-c-button--m-primary--BackgroundColor: #ff6f61;
+}
+
+.pf-c-button.pf-m-primary:hover,
+.pf-v6-c-button.pf-m-primary:hover {
+  background-color: #e85c50 !important;
+}
+
+a {
+  --pf-global--link--Color: #e85c50;
+  --pf-v6-global--link--Color: #e85c50;
+}
+
+@media (max-width: 35rem), (max-height: 17.5rem) {
+  .pf-c-login,
+  ak-flow-executor {
+    --ak-c-login--BackgroundColorOverlay: #fff0ec !important;
+    --ak-c-login__main--BackgroundColor: #fff9f5 !important;
+    --ak-c-login__main--Color: #0b1426 !important;
+  }
+
+  ak-flow-executor::part(main) {
+    margin: 1rem;
+    box-shadow: 0 1rem 3rem rgb(11 20 38 / 12%) !important;
+  }
+}

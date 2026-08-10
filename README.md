@@ -11,6 +11,7 @@ A deliberately simple identity for [lfpconnect.io](https://lfpconnect.io): a sty
 - Compact transparent monogram: `assets/svg/lfp-coral.svg`
 - Favicon/app icon: `assets/svg/lfp-favicon.svg`
 - Generated presentation boards: `assets/brandboards/`
+- Authentik theme and flat flow background: `assets/authentik/`
 - CSS and JSON design tokens: `tokens/`
 
 The SVG files are the production source of truth. The generated PNG boards are visual references, not masters.
