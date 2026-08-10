@@ -28,6 +28,16 @@
   --pf-c-form-control--Color: #0b1426 !important;
   --pf-c-button--m-primary--BackgroundColor: #ff6f61 !important;
   --pf-v6-c-button--m-primary--BackgroundColor: #ff6f61 !important;
+  --pf-global--active-color--100: #ff6f61 !important;
+  --pf-global--active-color--200: #e85c50 !important;
+  --pf-global--link--Color: #c9473c !important;
+  --pf-global--link--Color--hover: #9f3028 !important;
+  --pf-c-form__label--Color: #0b1426 !important;
+  --pf-c-form-control--BorderBottomColor: #ff6f61 !important;
+  --pf-c-form-control--focus--BorderBottomColor: #e85c50 !important;
+  --pf-c-form-control--m-focus--BorderBottomColor: #e85c50 !important;
+  --pf-c-page__title--Color: #0b1426 !important;
+  --pf-c-title--Color: #0b1426 !important;
 }
 
 html,
@@ -83,8 +93,32 @@ ak-brand-links,
 }
 
 a {
-  --pf-global--link--Color: #e85c50;
-  --pf-v6-global--link--Color: #e85c50;
+  color: #c9473c !important;
+  --pf-global--link--Color: #c9473c !important;
+  --pf-v6-global--link--Color: #c9473c !important;
+}
+
+.pf-c-form__label,
+.pf-c-form__label-text,
+.pf-c-title,
+.pf-c-page__title,
+.pf-c-login__main-body,
+label {
+  color: #0b1426 !important;
+}
+
+.pf-c-form-control,
+input,
+select,
+textarea {
+  color: #0b1426 !important;
+  border-bottom-color: #ff6f61 !important;
+}
+
+.source-button,
+.source-button i,
+[part~="source-icon"] {
+  color: #0b1426 !important;
 }
 
 @media (max-width: 35rem), (max-height: 17.5rem) {
