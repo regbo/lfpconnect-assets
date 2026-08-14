@@ -5,6 +5,9 @@
   --lfp-warm-white: #fff9f5;
   --lfp-soft-coral: #fff0ec;
   --lfp-logo-clear-space: 0.5em;
+  --lfp-font-wordmark: "Inter Variable", Inter, ui-sans-serif, system-ui, sans-serif;
+  --lfp-wordmark-weight: 520;
+  --lfp-wordmark-tracking: -0.026em;
 }
 
 [data-theme="dark"] {

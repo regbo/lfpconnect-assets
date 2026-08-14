@@ -15,6 +15,18 @@ A deliberately simple identity for [lfpconnect.io](https://lfpconnect.io): a sty
 - Authentik theme and flat flow background: `assets/authentik/`
 - CSS and JSON design tokens: `tokens/`
 
+### Composable product lockups
+
+Use `assets/svg/lfp-coral.svg` as the fixed `lfp` monogram, then render the
+lowercase product name as live text beside it. The reference wordmark family is
+Inter Variable at weight 520 with `-0.026em` tracking; equivalent CSS tokens
+live in `tokens/brand.css`. This keeps product names such as `connect`, `pipe`,
+or `admin` editable and accessible without converting them to SVG paths.
+
+Load Inter Variable in the consuming application so the lockup does not depend
+on fonts installed on the host. Keep the suffix lowercase and align its visual
+baseline to the monogram rather than vertically centering its bounding box.
+
 The SVG files are the production source of truth. The generated PNG boards are visual references, not masters.
 
 ## Palette

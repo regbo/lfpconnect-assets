@@ -6,5 +6,12 @@
     "ink": { "$type": "color", "$value": "#0B1426" },
     "warmWhite": { "$type": "color", "$value": "#FFF9F5" },
     "softCoral": { "$type": "color", "$value": "#FFF0EC" }
+  },
+  "font": {
+    "wordmarkFamily": {
+      "$type": "fontFamily",
+      "$value": ["Inter Variable", "Inter", "ui-sans-serif", "system-ui", "sans-serif"]
+    },
+    "wordmarkWeight": { "$type": "fontWeight", "$value": 520 }
   }
 }
